@@ -16,7 +16,8 @@ public class HomeStepsDefination {
     public void i_navigate_to_the_home_page() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        System.setProperty("webdriver.chrome.driver", "/Users/chanchaldutta/Downloads/chromedriver_mac_arm64/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver_mac_arm64");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver_mac_arm64");
         driver = new ChromeDriver(options);
         driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
     }
